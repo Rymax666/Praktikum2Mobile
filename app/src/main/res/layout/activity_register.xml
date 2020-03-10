@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <Androidx.constainlayout.widget.ConstainLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_register_inti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="600dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_register_inti"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Username"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Password"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pw"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Email"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/nope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Nomor HP"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/bpk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nope"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Nama Bapak"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="wrap_content"constraintStart_toStartOf
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:onClick="Register"
+        app:layout_constraintTop_toBottomOf="@id/bpk"
+        app:layout_marginStart="40dp"
+        app:layout_marginEnd="@id/bpk"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="Back"
+        app:layout_constraintTop_toBottomOf="@id/bpk"
+        app:layout_marginStart="@id/bpk"
+        app:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+    </Androidx.constainlayout.widget.ConstainLayout>
+</ScrollView>
